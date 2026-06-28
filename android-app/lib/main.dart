@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'constants/app_colors.dart';
-import 'screens/meme_feed_screen.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const DeepLoLApp());
@@ -24,14 +24,8 @@ class DeepLoLApp extends StatelessWidget {
           surface: AppColors.surface,
           error: AppColors.error,
         ),
-        appBarTheme: const AppBarTheme(
-          backgroundColor: AppColors.surface,
-          foregroundColor: AppColors.textPrimary,
-          elevation: 0,
-          centerTitle: true,
-        ),
       ),
-      home: const MemeFeedScreen(),
+      home: const HomeScreen(),
     );
   }
 }
